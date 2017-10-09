@@ -5,8 +5,10 @@ setup(
     version='0.0.1',
     packages=find_packages(),
     entry_points={
-        'console_scripts':
-            'cdm= cdm.main:cdm_main'
+        'console_scripts': [
+            'cdm= cdm.main:cdm_main',
+            'cdc= cdc.main:cdc_main',
+        ]
     },
     zip_safe=False,
     classifiers=[
